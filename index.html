@@ -4,37 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card assignment</title>
+    <title>Multiple Cards</title>
     <style>
-    *{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .upper{
+        background-color: aqua;
+        height: 60vh;
+      }
+      .lower{
+        background-color: plum;
+        height: 40vh;
+      }
+      h1{
+        color: rgb(230, 185, 62);
+        font-size: 3rem;
+        text-align: center;
+      }
+      h3{
+        color: whitesmoke;
+        text-align: center;
+        position: relative;
+        top:20%;
+        font-size: 10rem;
+        font-weight:bold;
+      }
+      box{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .first{
+        background-color: gainsboro;
 
-    }
-    .parent{
-     height: 100vh;
-     background-color: black;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-    }
-    .child{
-      height: 100px;
-      width: 200px;
-      margin: 10px;
-      background-color: orange;
-    }
-    
+      }
+      img{
+        height: 30vh;
+        border-style:groove;
+        border-color: gold;
+        border-width: 1mm;
+      }
+     .card{
+      position: relative;
+     }
+      .detail{
+        position: absolute;
+        bottom: -50px;
+        left: 30%;
+        color:antiquewhite;
+        border-style: none;
+        border-radius: 3mm;
+        border-style: dashed;
+        border-color: crimson;
+        background-color: rgb(93, 146, 225);
+      }
+     h2,p{
+      text-align: center;
+     }
     </style>
 </head>
 <body>
-<div class="parent">
- <div style="background-color: blue;" class="child"></div>
- <div style="background-color: greenyellow;" class="child"></div>
- <div class="child"></div>
-</div>
+<div class="upper">
+<h1>Travel destination</h1>
+<box>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6qVAHZ6lpoWg8t8RSkmAkdiWtADxyEfVTMA&usqp=CAU" alt="">
+    <div class="detail">
+      <h2>Paris</h2>
+      <p>Paris is world</p>
+    </div>
+  </div>
 
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfjhFJ0pq8pCh_iDsesBGvsSglkO67rZWf7w&usqp=CAU" alt="">
+    <div class="detail">
+      <h2>California</h2>
+      <p>Modernise like Calfornia</p>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0RU18GcHP0MLLwRixhPZl1W2wcTZ4BqnMQ&usqp=CAU" alt="">
+    <div class="detail">
+      <h2>Berlin</h2>
+    <p>Berlin is calling</p> 
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0LtbSkgpqOjIuudw3zR3aPaA_Vv2OOZbOA&usqp=CAU" alt="">
+    <div class="detail">
+      <h2>Amsterdam</h2>
+      <p>Go to Amsterdam</p>
+    </div>
+  </div>
+  
+</box>
+
+</div>
+<div class="lower">
+<h3>Dreamer!</h3>
+</div>
 </body>
 </html>
