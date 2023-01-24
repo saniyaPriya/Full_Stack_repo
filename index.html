@@ -11,33 +11,38 @@
         margin: 5px;
         box-sizing: border-box;
       }
-      .background{
-        background-color: white;
-        color: white;
+      h2{
+        color: aquamarine;
+        padding: 5px;
+        background-color: gold;
       }
-      h1.background{
+      h2:hover{
         background-color: brown;
+        color: white;
+        cursor: progress;
+        width:30%;
       }
-      h2.background#unique{
-        background-color: coral;
+      h2::after{
+        content: "I am after h2";
+        background-color: rgb(230, 213, 182);
       }
-      h2.background{
-        background-color: cadetblue;
+      h2::before{
+        content: "I am before h2";
+        background-color: palevioletred;
       }
-      h3.background{
-        background-color: blueviolet;
+      div::selection{
+        background-color: red;
       }
-      span.background{
-        background-color: crimson;
+      input:focus{
+        background-color: palegoldenrod;
+        font-size: 2rem;
+        color: rebeccapurple;
       }
     </style>
 </head>
 <body>
- <h1 class="background">Heading one</h1>
- <h2 class="background" id="unique" >Heading two</h2>
- <h2 class="background">Second Heading two</h2>
- <h3 class="background">Heading three</h3>
- <hr>
- <span class="background">I am a span</span>
+<h2>I am a Heading two</h2>
+<div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam obcaecati, libero labore placeat non voluptatibus delectus beatae quos vero culpa.</div>
+<input type="text">
 </body>
 </html>
