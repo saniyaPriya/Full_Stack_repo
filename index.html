@@ -8,105 +8,36 @@
     <style>
       *{
         padding: 0;
-        margin: 0;
+        margin: 5px;
         box-sizing: border-box;
       }
-      .upper{
-        background-color: aqua;
-        height: 60vh;
+      .background{
+        background-color: white;
+        color: white;
       }
-      .lower{
-        background-color: plum;
-        height: 40vh;
+      h1.background{
+        background-color: brown;
       }
-      h1{
-        color: rgb(230, 185, 62);
-        font-size: 3rem;
-        text-align: center;
+      h2.background#unique{
+        background-color: coral;
       }
-      h3{
-        color: whitesmoke;
-        text-align: center;
-        position: relative;
-        top:20%;
-        font-size: 10rem;
-        font-weight:bold;
+      h2.background{
+        background-color: cadetblue;
       }
-      box{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+      h3.background{
+        background-color: blueviolet;
       }
-      .first{
-        background-color: gainsboro;
-
+      span.background{
+        background-color: crimson;
       }
-      img{
-        height: 30vh;
-        border-style:groove;
-        border-color: gold;
-        border-width: 1mm;
-      }
-     .card{
-      position: relative;
-     }
-      .detail{
-        position: absolute;
-        bottom: -50px;
-        left: 30%;
-        color:antiquewhite;
-        border-style: none;
-        border-radius: 3mm;
-        border-style: dashed;
-        border-color: crimson;
-        background-color: rgb(93, 146, 225);
-      }
-     h2,p{
-      text-align: center;
-     }
     </style>
 </head>
 <body>
-<div class="upper">
-<h1>Travel destination</h1>
-<box>
-  <div class="card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6qVAHZ6lpoWg8t8RSkmAkdiWtADxyEfVTMA&usqp=CAU" alt="">
-    <div class="detail">
-      <h2>Paris</h2>
-      <p>Paris is world</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfjhFJ0pq8pCh_iDsesBGvsSglkO67rZWf7w&usqp=CAU" alt="">
-    <div class="detail">
-      <h2>California</h2>
-      <p>Modernise like Calfornia</p>
-    </div>
-  </div>
-  
-  <div class="card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0RU18GcHP0MLLwRixhPZl1W2wcTZ4BqnMQ&usqp=CAU" alt="">
-    <div class="detail">
-      <h2>Berlin</h2>
-    <p>Berlin is calling</p> 
-    </div>
-  </div>
-  
-  <div class="card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0LtbSkgpqOjIuudw3zR3aPaA_Vv2OOZbOA&usqp=CAU" alt="">
-    <div class="detail">
-      <h2>Amsterdam</h2>
-      <p>Go to Amsterdam</p>
-    </div>
-  </div>
-  
-</box>
-
-</div>
-<div class="lower">
-<h3>Dreamer!</h3>
-</div>
+ <h1 class="background">Heading one</h1>
+ <h2 class="background" id="unique" >Heading two</h2>
+ <h2 class="background">Second Heading two</h2>
+ <h3 class="background">Heading three</h3>
+ <hr>
+ <span class="background">I am a span</span>
 </body>
 </html>
