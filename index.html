@@ -11,38 +11,27 @@
         margin: 5px;
         box-sizing: border-box;
       }
-      h2{
-        color: aquamarine;
-        padding: 5px;
-        background-color: gold;
+      div.parent{
+       background-color: black;
+       height: 20vh;
       }
-      h2:hover{
-        background-color: brown;
-        color: white;
-        cursor: progress;
-        width:30%;
+      div.child{
+      background-color: goldenrod;
+      width: 80px;
+      height:80px ;
+      border-radius: 50%;
+      transition-duration: 0.5s;
+      transition-timing-function: linear;
       }
-      h2::after{
-        content: "I am after h2";
-        background-color: rgb(230, 213, 182);
+      .parent:hover .child{
+        background-color: aquamarine;
+        transform: translateX(300px)
       }
-      h2::before{
-        content: "I am before h2";
-        background-color: palevioletred;
-      }
-      div::selection{
-        background-color: red;
-      }
-      input:focus{
-        background-color: palegoldenrod;
-        font-size: 2rem;
-        color: rebeccapurple;
-      }
-    </style>
+      </style>
 </head>
 <body>
-<h2>I am a Heading two</h2>
-<div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam obcaecati, libero labore placeat non voluptatibus delectus beatae quos vero culpa.</div>
-<input type="text">
+<div class="parent">
+  <div class="child"></div>
+</div>
 </body>
 </html>
